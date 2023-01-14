@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-01-13T17:15:25.201Z",
+    "end": "2023-01-13T17:15:44.707Z",
+    "duration": 19506,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "691f8c0b-4686-4d97-bdfa-9ae7633d672e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\sprint4.cy.js",
+      "file": "cypress\\e2e\\sprint4.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b2b0a8d7-4a12-45a3-9336-80661099cb16",
+          "title": "Test choose category",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "active category should be programming",
+              "fullTitle": "Test choose category active category should be programming",
+              "timedOut": null,
+              "duration": 9277,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test-id=navigation-programming]').click();\ncy.get('[data-test-id=cards-list]').children().should(\"have.length\", 4);\ncy.get('[data-test-id=app]').screenshot('active-category-programming');",
+              "err": {},
+              "uuid": "8a550624-d47a-4684-a074-fbda256d59b5",
+              "parentUUID": "b2b0a8d7-4a12-45a3-9336-80661099cb16",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "active category should be design",
+              "fullTitle": "Test choose category active category should be design",
+              "timedOut": null,
+              "duration": 8623,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test-id=navigation-design]').click();\ncy.get('[data-test-id=cards-list]').children().should(\"have.length\", 3);\ncy.get('[data-test-id=app]').screenshot('active-category-design');",
+              "err": {},
+              "uuid": "80d827ac-5245-41a2-9571-315c520d85d6",
+              "parentUUID": "b2b0a8d7-4a12-45a3-9336-80661099cb16",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8a550624-d47a-4684-a074-fbda256d59b5",
+            "80d827ac-5245-41a2-9571-315c520d85d6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17900,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report",
+        "reportFilename": "report",
+        "overwrite": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

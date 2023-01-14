@@ -1,0 +1,25 @@
+name: GitHub Check Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  build:
+    name: Autograding with cypress
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check tests
+        uses: Ivan6813/merge-action@main
+        with:
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          pull_number: ${{ github.event.number }}
+          token: ${{ secrets.ADMIN_TOKEN }}
