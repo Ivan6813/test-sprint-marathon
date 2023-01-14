@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Check tests
-        uses: ./.github/actions/merge-action
+        uses: Ivan6813/merge-action@main
         with:
           owner: ${{ github.repository_owner }}
           repo: ${{ github.event.repository.name }}
