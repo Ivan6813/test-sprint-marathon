@@ -1,0 +1,20 @@
+name: Merge branch to main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  add-branch-protection:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    name: Add branch protection
+    steps:
+      - name: Add branch protection
+        uses: Ivan6813/initial-action@main
+        with:
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          token: ${{ secrets.ADMIN_TOKEN }}
