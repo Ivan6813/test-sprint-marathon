@@ -23,6 +23,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "https://ivan6813.github.io/test-sprint-marathon/",
   "browserslist": {
     "production": [
       ">0.2%",
